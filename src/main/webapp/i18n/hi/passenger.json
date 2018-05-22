@@ -1,0 +1,29 @@
+
+{
+    "camTravel2App": {
+        "passenger" : {
+            "home": {
+                "title": "Passengers",
+                "createLabel": "नया Passenger बनाएँ",
+                "createOrEditLabel": "Passenger बनाएँ या संपादित करें",
+                "search": "Passenger खोजें"
+            },
+            "created": "एक नया Passenger [identifier: {{ param }}] तैयार है",
+            "updated": "एक Passenger [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Passenger [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Passenger [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Passenger"
+            },
+            "name": "Name",
+            "surname": "Surname",
+            "email": "Email",
+            "phone": "Phone",
+            "cni": "Cni",
+            "type": "Type",
+            "booking": "Booking"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+
+{
+    "camTravel2App": {
+        "wagon" : {
+            "home": {
+                "title": "Wagons",
+                "createLabel": "Crear nuevo Wagon",
+                "createOrEditLabel": "Crear o editar Wagon",
+                "search": "Search for Wagon"
+            },
+            "created": "Un nuevo Wagon ha sido creado con el identificador {{ param }}",
+            "updated": "Un Wagon ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Wagon ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Wagon {{ id }}?"
+            },
+            "detail": {
+                "title": "Wagon"
+            },
+            "code": "Code",
+            "name": "Name",
+            "place": "Place",
+            "model": "Model",
+            "train": "Train",
+            "classe": "Classe"
+        }
+    }
+}

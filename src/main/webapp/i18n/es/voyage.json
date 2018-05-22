@@ -1,0 +1,31 @@
+
+{
+    "camTravel2App": {
+        "voyage" : {
+            "home": {
+                "title": "Voyages",
+                "createLabel": "Crear nuevo Voyage",
+                "createOrEditLabel": "Crear o editar Voyage",
+                "search": "Search for Voyage"
+            },
+            "created": "Un nuevo Voyage ha sido creado con el identificador {{ param }}",
+            "updated": "Un Voyage ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Voyage ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Voyage {{ id }}?"
+            },
+            "detail": {
+                "title": "Voyage"
+            },
+            "numero": "Numero",
+            "datedepart": "Datedepart",
+            "datearrive": "Datearrive",
+            "voyage": "Voyage",
+            "car": "Car",
+            "train": "Train",
+            "type": "Type",
+            "state": "State",
+            "voyage": "Voyage"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+
+{
+    "camTravel2App": {
+        "stateVoyage" : {
+            "home": {
+                "title": "StateVoyages",
+                "createLabel": "नया State Voyage बनाएँ",
+                "createOrEditLabel": "State Voyage बनाएँ या संपादित करें",
+                "search": "State Voyage खोजें"
+            },
+            "created": "एक नया State Voyage [identifier: {{ param }}] तैयार है",
+            "updated": "एक State Voyage [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "State Voyage [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "State Voyage [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "State Voyage"
+            },
+            "code": "Code",
+            "name": "Name",
+            "description": "Description",
+            "voyage": "Voyage"
+        }
+    }
+}

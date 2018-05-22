@@ -1,0 +1,25 @@
+
+{
+    "camTravel2App": {
+        "typeVoyage" : {
+            "home": {
+                "title": "TypeVoyages",
+                "createLabel": "नया Type Voyage बनाएँ",
+                "createOrEditLabel": "Type Voyage बनाएँ या संपादित करें",
+                "search": "Type Voyage खोजें"
+            },
+            "created": "एक नया Type Voyage [identifier: {{ param }}] तैयार है",
+            "updated": "एक Type Voyage [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Type Voyage [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Type Voyage [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Type Voyage"
+            },
+            "code": "Code",
+            "name": "Name",
+            "voyage": "Voyage"
+        }
+    }
+}

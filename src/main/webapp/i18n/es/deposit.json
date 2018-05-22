@@ -1,0 +1,26 @@
+
+{
+    "camTravel2App": {
+        "deposit" : {
+            "home": {
+                "title": "Deposits",
+                "createLabel": "Crear nuevo Deposit",
+                "createOrEditLabel": "Crear o editar Deposit",
+                "search": "Search for Deposit"
+            },
+            "created": "Un nuevo Deposit ha sido creado con el identificador {{ param }}",
+            "updated": "Un Deposit ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Deposit ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Deposit {{ id }}?"
+            },
+            "detail": {
+                "title": "Deposit"
+            },
+            "amount": "Amount",
+            "date": "Date",
+            "agency": "Agency",
+            "payment": "Payment"
+        }
+    }
+}

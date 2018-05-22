@@ -1,0 +1,29 @@
+
+{
+    "camTravel2App": {
+        "booking" : {
+            "home": {
+                "title": "Bookings",
+                "createLabel": "नया Booking बनाएँ",
+                "createOrEditLabel": "Booking बनाएँ या संपादित करें",
+                "search": "Booking खोजें"
+            },
+            "created": "एक नया Booking [identifier: {{ param }}] तैयार है",
+            "updated": "एक Booking [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Booking [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Booking [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Booking"
+            },
+            "pnr": "Pnr",
+            "bookingDate": "Booking Date",
+            "passenger": "Passenger",
+            "booking": "Booking",
+            "agency": "Agency",
+            "company": "Company",
+            "payment": "Payment"
+        }
+    }
+}

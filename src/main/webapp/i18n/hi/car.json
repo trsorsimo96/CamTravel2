@@ -1,0 +1,28 @@
+
+{
+    "camTravel2App": {
+        "car" : {
+            "home": {
+                "title": "Cars",
+                "createLabel": "नया Car बनाएँ",
+                "createOrEditLabel": "Car बनाएँ या संपादित करें",
+                "search": "Car खोजें"
+            },
+            "created": "एक नया Car [identifier: {{ param }}] तैयार है",
+            "updated": "एक Car [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Car [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Car [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Car"
+            },
+            "immatriculation": "Immatriculation",
+            "place": "Place",
+            "voyage": "Voyage",
+            "model": "Model",
+            "classe": "Classe",
+            "company": "Company"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+{
+    "camTravel2App": {
+        "routes" : {
+            "home": {
+                "title": "Routes",
+                "createLabel": "नया Routes बनाएँ",
+                "createOrEditLabel": "Routes बनाएँ या संपादित करें",
+                "search": "Routes खोजें"
+            },
+            "created": "एक नया Routes [identifier: {{ param }}] तैयार है",
+            "updated": "एक Routes [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Routes [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Routes [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Routes"
+            },
+            "code": "Code",
+            "name": "Name",
+            "itinerary": "Itinerary",
+            "origin": "Origin",
+            "destination": "Destination"
+        }
+    }
+}

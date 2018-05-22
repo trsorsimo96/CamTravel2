@@ -1,0 +1,26 @@
+
+{
+    "camTravel2App": {
+        "companyClasse" : {
+            "home": {
+                "title": "CompanyClasses",
+                "createLabel": "नया Company Classe बनाएँ",
+                "createOrEditLabel": "Company Classe बनाएँ या संपादित करें",
+                "search": "Company Classe खोजें"
+            },
+            "created": "एक नया Company Classe [identifier: {{ param }}] तैयार है",
+            "updated": "एक Company Classe [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Company Classe [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Company Classe [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Company Classe"
+            },
+            "company": "Company",
+            "classe": "Classe",
+            "price": "Price",
+            "name": "Name"
+        }
+    }
+}

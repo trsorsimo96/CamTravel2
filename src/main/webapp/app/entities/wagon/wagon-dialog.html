@@ -1,0 +1,89 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myWagonLabel" data-translate="camTravel2App.wagon.home.createOrEditLabel">Create or edit a Wagon</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.wagon.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.wagon.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="camTravel2App.wagon.code" for="field_code">Code</label>
+            <input type="text" class="form-control" name="code" id="field_code"
+                    ng-model="vm.wagon.code"
+                    required/>
+            <div ng-show="editForm.code.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.code.$error.required" data-translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="camTravel2App.wagon.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="vm.wagon.name"
+                    required/>
+            <div ng-show="editForm.name.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.name.$error.required" data-translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="camTravel2App.wagon.place" for="field_place">Place</label>
+            <input type="number" class="form-control" name="place" id="field_place"
+                    ng-model="vm.wagon.place"
+                    />
+        </div>
+
+        <div class="form-group">
+            <label data-translate="camTravel2App.wagon.model" for="field_model">Model</label>
+            <select class="form-control" id="field_model" name="model" ng-model="vm.wagon.model" ng-options="modelCar as modelCar.code for modelCar in vm.modelcars track by modelCar.id" required>
+            </select>
+        </div>
+        <div ng-show="editForm.model.$invalid">
+            <p class="help-block"
+                ng-show="editForm.model.$error.required" data-translate="entity.validation.required">
+                This field is required.
+            </p>
+        </div>
+        <div class="form-group">
+            <label data-translate="camTravel2App.wagon.train" for="field_train">Train</label>
+            <select class="form-control" id="field_train" name="train" ng-model="vm.wagon.train" ng-options="train as train.code for train in vm.trains track by train.id" required>
+            </select>
+        </div>
+        <div ng-show="editForm.train.$invalid">
+            <p class="help-block"
+                ng-show="editForm.train.$error.required" data-translate="entity.validation.required">
+                This field is required.
+            </p>
+        </div>
+        <div class="form-group">
+            <label data-translate="camTravel2App.wagon.classe" for="field_classe">Classe</label>
+            <select class="form-control" id="field_classe" name="classe" ng-model="vm.wagon.classe" ng-options="classe as classe.code for classe in vm.classes track by classe.id" required>
+            </select>
+        </div>
+        <div ng-show="editForm.classe.$invalid">
+            <p class="help-block"
+                ng-show="editForm.classe.$error.required" data-translate="entity.validation.required">
+                This field is required.
+            </p>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

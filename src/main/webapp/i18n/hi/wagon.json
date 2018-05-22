@@ -1,0 +1,28 @@
+
+{
+    "camTravel2App": {
+        "wagon" : {
+            "home": {
+                "title": "Wagons",
+                "createLabel": "नया Wagon बनाएँ",
+                "createOrEditLabel": "Wagon बनाएँ या संपादित करें",
+                "search": "Wagon खोजें"
+            },
+            "created": "एक नया Wagon [identifier: {{ param }}] तैयार है",
+            "updated": "एक Wagon [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Wagon [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Wagon [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Wagon"
+            },
+            "code": "Code",
+            "name": "Name",
+            "place": "Place",
+            "model": "Model",
+            "train": "Train",
+            "classe": "Classe"
+        }
+    }
+}

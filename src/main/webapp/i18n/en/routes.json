@@ -1,0 +1,27 @@
+
+{
+    "camTravel2App": {
+        "routes" : {
+            "home": {
+                "title": "Routes",
+                "createLabel": "Create a new Routes",
+                "createOrEditLabel": "Create or edit a Routes",
+                "search": "Search for Routes"
+            },
+            "created": "A new Routes is created with identifier {{ param }}",
+            "updated": "A Routes is updated with identifier {{ param }}",
+            "deleted": "A Routes is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Routes {{ id }}?"
+            },
+            "detail": {
+                "title": "Routes"
+            },
+            "code": "Code",
+            "name": "Name",
+            "itinerary": "Itinerary",
+            "origin": "Origin",
+            "destination": "Destination"
+        }
+    }
+}

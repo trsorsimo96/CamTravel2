@@ -1,0 +1,26 @@
+
+{
+    "camTravel2App": {
+        "stateVoyage" : {
+            "home": {
+                "title": "State Voyages",
+                "createLabel": "Crear nuevo State Voyage",
+                "createOrEditLabel": "Crear o editar State Voyage",
+                "search": "Search for State Voyage"
+            },
+            "created": "Un nuevo State Voyage ha sido creado con el identificador {{ param }}",
+            "updated": "Un State Voyage ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un State Voyage ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar State Voyage {{ id }}?"
+            },
+            "detail": {
+                "title": "State Voyage"
+            },
+            "code": "Code",
+            "name": "Name",
+            "description": "Description",
+            "voyage": "Voyage"
+        }
+    }
+}

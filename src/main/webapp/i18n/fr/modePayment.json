@@ -1,0 +1,26 @@
+
+{
+    "camTravel2App": {
+        "modePayment" : {
+            "home": {
+                "title": "ModePayments",
+                "createLabel": "Créer un nouveau Mode Payment",
+                "createOrEditLabel": "Créer ou éditer un Mode Payment",
+                "search": "Recherche pour Mode Payment"
+            },
+            "created": "Un nouveau Mode Payment a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Mode Payment avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Mode Payment avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Mode Payment {{ id }} ?"
+            },
+            "detail": {
+                "title": "Mode Payment"
+            },
+            "code": "Code",
+            "name": "Name",
+            "booking": "Booking",
+            "deposit": "Deposit"
+        }
+    }
+}

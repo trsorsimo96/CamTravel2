@@ -1,0 +1,28 @@
+
+{
+    "camTravel2App": {
+        "train" : {
+            "home": {
+                "title": "Trains",
+                "createLabel": "Crear nuevo Train",
+                "createOrEditLabel": "Crear o editar Train",
+                "search": "Search for Train"
+            },
+            "created": "Un nuevo Train ha sido creado con el identificador {{ param }}",
+            "updated": "Un Train ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Train ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Train {{ id }}?"
+            },
+            "detail": {
+                "title": "Train"
+            },
+            "code": "Code",
+            "name": "Name",
+            "place": "Place",
+            "wagon": "Wagon",
+            "voyage": "Voyage",
+            "company": "Company"
+        }
+    }
+}

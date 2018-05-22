@@ -1,0 +1,32 @@
+
+{
+    "camTravel2App": {
+        "modelCar" : {
+            "home": {
+                "title": "Model Cars",
+                "createLabel": "Crear nuevo Model Car",
+                "createOrEditLabel": "Crear o editar Model Car",
+                "search": "Search for Model Car"
+            },
+            "created": "Un nuevo Model Car ha sido creado con el identificador {{ param }}",
+            "updated": "Un Model Car ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Model Car ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Model Car {{ id }}?"
+            },
+            "detail": {
+                "title": "Model Car"
+            },
+            "code": "Code",
+            "name": "Name",
+            "nbNormalRange": "Nb Normal Range",
+            "nbSeatLeft": "Nb Seat Left",
+            "nbSeatRight": "Nb Seat Right",
+            "nbSeatBefore": "Nb Seat Before",
+            "nbSeatBelow": "Nb Seat Below",
+            "image": "Image",
+            "car": "Car",
+            "wagon": "Wagon"
+        }
+    }
+}

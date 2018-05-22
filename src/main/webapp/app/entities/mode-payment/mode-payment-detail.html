@@ -1,0 +1,27 @@
+
+<div>
+    <h2><span data-translate="camTravel2App.modePayment.detail.title">Mode Payment</span> {{vm.modePayment.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="camTravel2App.modePayment.code">Code</span></dt>
+        <dd>
+            <span>{{vm.modePayment.code}}</span>
+        </dd>
+        <dt><span data-translate="camTravel2App.modePayment.name">Name</span></dt>
+        <dd>
+            <span>{{vm.modePayment.name}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="mode-payment-detail.edit({id:vm.modePayment.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

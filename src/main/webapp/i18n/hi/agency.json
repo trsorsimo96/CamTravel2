@@ -1,0 +1,31 @@
+
+{
+    "camTravel2App": {
+        "agency" : {
+            "home": {
+                "title": "Agencies",
+                "createLabel": "नया Agency बनाएँ",
+                "createOrEditLabel": "Agency बनाएँ या संपादित करें",
+                "search": "Agency खोजें"
+            },
+            "created": "एक नया Agency [identifier: {{ param }}] तैयार है",
+            "updated": "एक Agency [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Agency [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Agency [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Agency"
+            },
+            "pcc": "Pcc",
+            "name": "Name",
+            "tel": "Tel",
+            "email": "Email",
+            "omNumber": "Om Number",
+            "momoNumber": "Momo Number",
+            "solde": "Solde",
+            "booking": "Booking",
+            "deposit": "Deposit"
+        }
+    }
+}
