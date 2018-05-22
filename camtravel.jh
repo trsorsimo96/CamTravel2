@@ -1,0 +1,164 @@
+
+
+entity Company {
+	code String required minlength(3) maxlength(3),
+    name String required,
+    image ImageBlob required,
+    tel String,
+    email String required,
+    omNumber String,
+    momoNumber String,
+    systemCommision Integer required
+}
+
+entity Car {
+	immatriculation String required,
+    place Integer
+}
+
+entity Train {
+    code String required,
+    name String required,
+    place Integer
+}
+
+entity Wagon {
+   code String required,
+   name String required,
+   place Integer
+}
+
+entity ModelCar {
+	code String required,
+    name String required,
+    nbNormalRange Integer required,
+    nbSeatLeft Integer required,
+    nbSeatRight Integer required,
+    nbSeatBefore Integer,
+    nbSeatBelow Integer,
+    image ImageBlob
+}
+
+entity City {
+	code String required minlength(3) maxlength(3),
+    name String required
+}
+
+entity Routes {
+	code String required,
+    name String required,
+}
+
+entity TypePassenger{
+	code String required minlength(3) maxlength(3),
+    name String required,
+    description String
+}
+
+
+entity Passenger {
+	name String required,
+    surname String required,
+    email String,
+    phone String,
+    cni String
+}
+
+
+entity Voyage {
+    numero String required,
+	datedepart ZonedDateTime required,
+    datearrive ZonedDateTime required
+}
+
+entity TypeVoyage {
+   code String required,
+   name String required
+}
+
+entity Booking {
+	pnr String required,
+    bookingDate ZonedDateTime required
+}
+
+entity Agency {
+    pcc String required,
+    name String required,
+    tel String,
+    email String required,
+    omNumber String,
+    momoNumber String,
+    solde Integer
+}
+
+entity Deposit {
+   amount Integer,
+   date ZonedDateTime required
+}
+
+entity Classe{
+   code String required,
+   name String required
+}
+
+
+
+entity ModePayment{
+	code String required,
+    name String required
+}
+
+entity StateVoyage{
+	code String required,
+    name String required,
+    description String
+}
+
+entity CompanyClasse{
+    company String required,
+    classe String required,
+    price Integer,
+    name String
+}
+
+entity CompanyAgency{
+   company String required,
+   agency String required,
+   commision Integer
+}
+
+
+
+relationship OneToOne{
+   Voyage{voyage(numero)} to Routes{itinerary(code)}
+}
+
+
+relationship ManyToMany{
+   Booking{booking(numero)} to Voyage{voyage(pnr)}
+}
+
+relationship OneToMany {
+    City{routes} to Routes{origin(name) required},
+    City{routes} to Routes{destination(name) required},
+    ModelCar{car} to Car{model(code) required},
+    ModelCar{wagon} to Wagon{model(code) required},
+    Train{wagon} to Wagon{train(code) required},
+    Classe{wagon} to Wagon{classe(code) required},
+    Classe{car} to Car{classe(code) required},
+    TypePassenger{passenger} to Passenger{type(code) required},
+    Company{car} to Car{company(code) required},
+    Company{train} to Train{company(code) required},
+    Car{voyage} to Voyage{car(immatriculation) },
+    Train{voyage} to Voyage{train(immatriculation) },
+    TypeVoyage{voyage} to Voyage{type(code) },
+    Booking{passenger} to Passenger{booking(pnr)},
+    Agency {booking} to Booking{agency(name)},
+    Agency {deposit} to Deposit{agency(name)},
+    Company {booking} to Booking{company(name)},
+    ModePayment{booking} to Booking{payment(code)},
+    ModePayment{deposit} to Deposit{payment(code)},
+    StateVoyage{voyage} to Voyage{state(code)}
+}
+
+
