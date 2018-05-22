@@ -1,0 +1,26 @@
+
+{
+    "camTravel2App": {
+        "typePassenger" : {
+            "home": {
+                "title": "TypePassengers",
+                "createLabel": "Créer un nouveau Type Passenger",
+                "createOrEditLabel": "Créer ou éditer un Type Passenger",
+                "search": "Recherche pour Type Passenger"
+            },
+            "created": "Un nouveau Type Passenger a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Type Passenger avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Type Passenger avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Type Passenger {{ id }} ?"
+            },
+            "detail": {
+                "title": "Type Passenger"
+            },
+            "code": "Code",
+            "name": "Name",
+            "description": "Description",
+            "passenger": "Passenger"
+        }
+    }
+}

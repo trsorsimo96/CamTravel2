@@ -1,0 +1,29 @@
+
+{
+    "camTravel2App": {
+        "passenger" : {
+            "home": {
+                "title": "Passengers",
+                "createLabel": "Crear nuevo Passenger",
+                "createOrEditLabel": "Crear o editar Passenger",
+                "search": "Search for Passenger"
+            },
+            "created": "Un nuevo Passenger ha sido creado con el identificador {{ param }}",
+            "updated": "Un Passenger ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Passenger ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Passenger {{ id }}?"
+            },
+            "detail": {
+                "title": "Passenger"
+            },
+            "name": "Name",
+            "surname": "Surname",
+            "email": "Email",
+            "phone": "Phone",
+            "cni": "Cni",
+            "type": "Type",
+            "booking": "Booking"
+        }
+    }
+}

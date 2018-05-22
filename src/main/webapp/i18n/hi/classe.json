@@ -1,0 +1,26 @@
+
+{
+    "camTravel2App": {
+        "classe" : {
+            "home": {
+                "title": "Classes",
+                "createLabel": "नया Classe बनाएँ",
+                "createOrEditLabel": "Classe बनाएँ या संपादित करें",
+                "search": "Classe खोजें"
+            },
+            "created": "एक नया Classe [identifier: {{ param }}] तैयार है",
+            "updated": "एक Classe [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Classe [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Classe [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Classe"
+            },
+            "code": "Code",
+            "name": "Name",
+            "wagon": "Wagon",
+            "car": "Car"
+        }
+    }
+}

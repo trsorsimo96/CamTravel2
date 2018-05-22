@@ -1,0 +1,25 @@
+
+{
+    "camTravel2App": {
+        "typeVoyage" : {
+            "home": {
+                "title": "TypeVoyages",
+                "createLabel": "Créer un nouveau Type Voyage",
+                "createOrEditLabel": "Créer ou éditer un Type Voyage",
+                "search": "Recherche pour Type Voyage"
+            },
+            "created": "Un nouveau Type Voyage a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Type Voyage avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Type Voyage avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Type Voyage {{ id }} ?"
+            },
+            "detail": {
+                "title": "Type Voyage"
+            },
+            "code": "Code",
+            "name": "Name",
+            "voyage": "Voyage"
+        }
+    }
+}

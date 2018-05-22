@@ -1,0 +1,31 @@
+
+{
+    "camTravel2App": {
+        "agency" : {
+            "home": {
+                "title": "Agencies",
+                "createLabel": "Crear nuevo Agency",
+                "createOrEditLabel": "Crear o editar Agency",
+                "search": "Search for Agency"
+            },
+            "created": "Un nuevo Agency ha sido creado con el identificador {{ param }}",
+            "updated": "Un Agency ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Agency ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Agency {{ id }}?"
+            },
+            "detail": {
+                "title": "Agency"
+            },
+            "pcc": "Pcc",
+            "name": "Name",
+            "tel": "Tel",
+            "email": "Email",
+            "omNumber": "Om Number",
+            "momoNumber": "Momo Number",
+            "solde": "Solde",
+            "booking": "Booking",
+            "deposit": "Deposit"
+        }
+    }
+}

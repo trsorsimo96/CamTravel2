@@ -1,0 +1,31 @@
+
+{
+    "camTravel2App": {
+        "voyage" : {
+            "home": {
+                "title": "Voyages",
+                "createLabel": "नया Voyage बनाएँ",
+                "createOrEditLabel": "Voyage बनाएँ या संपादित करें",
+                "search": "Voyage खोजें"
+            },
+            "created": "एक नया Voyage [identifier: {{ param }}] तैयार है",
+            "updated": "एक Voyage [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Voyage [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Voyage [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Voyage"
+            },
+            "numero": "Numero",
+            "datedepart": "Datedepart",
+            "datearrive": "Datearrive",
+            "voyage": "Voyage",
+            "car": "Car",
+            "train": "Train",
+            "type": "Type",
+            "state": "State",
+            "voyage": "Voyage"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+
+{
+    "camTravel2App": {
+        "modelCar" : {
+            "home": {
+                "title": "ModelCars",
+                "createLabel": "नया Model Car बनाएँ",
+                "createOrEditLabel": "Model Car बनाएँ या संपादित करें",
+                "search": "Model Car खोजें"
+            },
+            "created": "एक नया Model Car [identifier: {{ param }}] तैयार है",
+            "updated": "एक Model Car [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Model Car [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Model Car [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Model Car"
+            },
+            "code": "Code",
+            "name": "Name",
+            "nbNormalRange": "Nb Normal Range",
+            "nbSeatLeft": "Nb Seat Left",
+            "nbSeatRight": "Nb Seat Right",
+            "nbSeatBefore": "Nb Seat Before",
+            "nbSeatBelow": "Nb Seat Below",
+            "image": "Image",
+            "car": "Car",
+            "wagon": "Wagon"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+
+{
+    "camTravel2App": {
+        "train" : {
+            "home": {
+                "title": "Trains",
+                "createLabel": "नया Train बनाएँ",
+                "createOrEditLabel": "Train बनाएँ या संपादित करें",
+                "search": "Train खोजें"
+            },
+            "created": "एक नया Train [identifier: {{ param }}] तैयार है",
+            "updated": "एक Train [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Train [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Train [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Train"
+            },
+            "code": "Code",
+            "name": "Name",
+            "place": "Place",
+            "wagon": "Wagon",
+            "voyage": "Voyage",
+            "company": "Company"
+        }
+    }
+}

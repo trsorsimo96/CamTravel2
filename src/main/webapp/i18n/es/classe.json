@@ -1,0 +1,26 @@
+
+{
+    "camTravel2App": {
+        "classe" : {
+            "home": {
+                "title": "Classes",
+                "createLabel": "Crear nuevo Classe",
+                "createOrEditLabel": "Crear o editar Classe",
+                "search": "Search for Classe"
+            },
+            "created": "Un nuevo Classe ha sido creado con el identificador {{ param }}",
+            "updated": "Un Classe ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Classe ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Classe {{ id }}?"
+            },
+            "detail": {
+                "title": "Classe"
+            },
+            "code": "Code",
+            "name": "Name",
+            "wagon": "Wagon",
+            "car": "Car"
+        }
+    }
+}

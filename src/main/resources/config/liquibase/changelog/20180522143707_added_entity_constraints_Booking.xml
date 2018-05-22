@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Booking.
+    -->
+    <changeSet id="20180522143707-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="bookings_id"
+                                 baseTableName="booking_booking"
+                                 constraintName="fk_booking_booking_bookings_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="booking"/>
+        <addForeignKeyConstraint baseColumnNames="bookings_id"
+                                 baseTableName="booking_booking"
+                                 constraintName="fk_booking_booking_bookings_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="voyage"/>
+        
+        <addForeignKeyConstraint baseColumnNames="agency_id"
+                                 baseTableName="booking"
+                                 constraintName="fk_booking_agency_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="agency"/>
+
+        <addForeignKeyConstraint baseColumnNames="company_id"
+                                 baseTableName="booking"
+                                 constraintName="fk_booking_company_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="company"/>
+
+        <addForeignKeyConstraint baseColumnNames="payment_id"
+                                 baseTableName="booking"
+                                 constraintName="fk_booking_payment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="mode_payment"/>
+
+    </changeSet>
+</databaseChangeLog>

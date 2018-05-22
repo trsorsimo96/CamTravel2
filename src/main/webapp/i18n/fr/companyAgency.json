@@ -1,0 +1,25 @@
+
+{
+    "camTravel2App": {
+        "companyAgency" : {
+            "home": {
+                "title": "CompanyAgencies",
+                "createLabel": "Créer un nouveau Company Agency",
+                "createOrEditLabel": "Créer ou éditer un Company Agency",
+                "search": "Recherche pour Company Agency"
+            },
+            "created": "Un nouveau Company Agency a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Company Agency avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Company Agency avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Company Agency {{ id }} ?"
+            },
+            "detail": {
+                "title": "Company Agency"
+            },
+            "company": "Company",
+            "agency": "Agency",
+            "commision": "Commision"
+        }
+    }
+}

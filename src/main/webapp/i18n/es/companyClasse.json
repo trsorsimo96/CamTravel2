@@ -1,0 +1,26 @@
+
+{
+    "camTravel2App": {
+        "companyClasse" : {
+            "home": {
+                "title": "Company Classes",
+                "createLabel": "Crear nuevo Company Classe",
+                "createOrEditLabel": "Crear o editar Company Classe",
+                "search": "Search for Company Classe"
+            },
+            "created": "Un nuevo Company Classe ha sido creado con el identificador {{ param }}",
+            "updated": "Un Company Classe ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Company Classe ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Company Classe {{ id }}?"
+            },
+            "detail": {
+                "title": "Company Classe"
+            },
+            "company": "Company",
+            "classe": "Classe",
+            "price": "Price",
+            "name": "Name"
+        }
+    }
+}

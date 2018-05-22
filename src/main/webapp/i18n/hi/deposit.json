@@ -1,0 +1,26 @@
+
+{
+    "camTravel2App": {
+        "deposit" : {
+            "home": {
+                "title": "Deposits",
+                "createLabel": "नया Deposit बनाएँ",
+                "createOrEditLabel": "Deposit बनाएँ या संपादित करें",
+                "search": "Deposit खोजें"
+            },
+            "created": "एक नया Deposit [identifier: {{ param }}] तैयार है",
+            "updated": "एक Deposit [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Deposit [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Deposit [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Deposit"
+            },
+            "amount": "Amount",
+            "date": "Date",
+            "agency": "Agency",
+            "payment": "Payment"
+        }
+    }
+}

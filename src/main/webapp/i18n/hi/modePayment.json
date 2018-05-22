@@ -1,0 +1,26 @@
+
+{
+    "camTravel2App": {
+        "modePayment" : {
+            "home": {
+                "title": "ModePayments",
+                "createLabel": "नया Mode Payment बनाएँ",
+                "createOrEditLabel": "Mode Payment बनाएँ या संपादित करें",
+                "search": "Mode Payment खोजें"
+            },
+            "created": "एक नया Mode Payment [identifier: {{ param }}] तैयार है",
+            "updated": "एक Mode Payment [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Mode Payment [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Mode Payment [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Mode Payment"
+            },
+            "code": "Code",
+            "name": "Name",
+            "booking": "Booking",
+            "deposit": "Deposit"
+        }
+    }
+}

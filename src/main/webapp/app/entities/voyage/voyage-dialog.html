@@ -1,0 +1,108 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myVoyageLabel" data-translate="camTravel2App.voyage.home.createOrEditLabel">Create or edit a Voyage</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.voyage.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.voyage.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="camTravel2App.voyage.numero" for="field_numero">Numero</label>
+            <input type="text" class="form-control" name="numero" id="field_numero"
+                    ng-model="vm.voyage.numero"
+                    required/>
+            <div ng-show="editForm.numero.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.numero.$error.required" data-translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="camTravel2App.voyage.datedepart" for="field_datedepart">Datedepart</label>
+                <div class="input-group">
+                    <input id="field_datedepart" type="text" class="form-control" name="datedepart" datetime-picker="{{dateformat}}" ng-model="vm.voyage.datedepart" is-open="vm.datePickerOpenStatus.datedepart"
+                    required/>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('datedepart')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+            <div ng-show="editForm.datedepart.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.datedepart.$error.required" data-translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.datedepart.$error.ZonedDateTimelocal" data-translate="entity.validation.ZonedDateTimelocal">
+                    This field should be a date and time.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="camTravel2App.voyage.datearrive" for="field_datearrive">Datearrive</label>
+                <div class="input-group">
+                    <input id="field_datearrive" type="text" class="form-control" name="datearrive" datetime-picker="{{dateformat}}" ng-model="vm.voyage.datearrive" is-open="vm.datePickerOpenStatus.datearrive"
+                    required/>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('datearrive')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+            <div ng-show="editForm.datearrive.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.datearrive.$error.required" data-translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.datearrive.$error.ZonedDateTimelocal" data-translate="entity.validation.ZonedDateTimelocal">
+                    This field should be a date and time.
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label data-translate="camTravel2App.voyage.voyage" for="field_voyage">Voyage</label>
+            <select class="form-control" id="field_voyage" name="voyage" ng-model="vm.voyage.voyage" ng-options="routes as routes.numero for routes in vm.voyages | orderBy:'id' track by routes.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label data-translate="camTravel2App.voyage.car" for="field_car">Car</label>
+            <select class="form-control" id="field_car" name="car" ng-model="vm.voyage.car" ng-options="car as car.immatriculation for car in vm.cars track by car.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label data-translate="camTravel2App.voyage.train" for="field_train">Train</label>
+            <select class="form-control" id="field_train" name="train" ng-model="vm.voyage.train" ng-options="train as train.immatriculation for train in vm.trains track by train.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label data-translate="camTravel2App.voyage.type" for="field_type">Type</label>
+            <select class="form-control" id="field_type" name="type" ng-model="vm.voyage.type" ng-options="typeVoyage as typeVoyage.code for typeVoyage in vm.typevoyages track by typeVoyage.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label data-translate="camTravel2App.voyage.state" for="field_state">State</label>
+            <select class="form-control" id="field_state" name="state" ng-model="vm.voyage.state" ng-options="stateVoyage as stateVoyage.code for stateVoyage in vm.statevoyages track by stateVoyage.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

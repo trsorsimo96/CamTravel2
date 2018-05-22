@@ -1,0 +1,73 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "voyage",
+            "otherEntityName": "routes",
+            "otherEntityField": "numero",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "itinerary(code)"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "car",
+            "otherEntityName": "car",
+            "otherEntityField": "immatriculation"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "train",
+            "otherEntityName": "train",
+            "otherEntityField": "immatriculation"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "type",
+            "otherEntityName": "typeVoyage",
+            "otherEntityField": "code"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "state",
+            "otherEntityName": "stateVoyage",
+            "otherEntityField": "code"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "voyage",
+            "otherEntityName": "booking",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "booking"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "numero",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "datedepart",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "datearrive",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180522143705",
+    "entityTableName": "voyage",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

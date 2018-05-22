@@ -1,0 +1,97 @@
+<div>
+    <h2 data-translate="camTravel2App.voyage.home.title">Voyages</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="voyage.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span class="hidden-xs-down"  data-translate="camTravel2App.voyage.home.createLabel">
+                        Create new Voyage
+                    </span>
+                </button>
+            </div>
+            <div class="col-xs-8 no-padding-right">
+                <form name="searchForm" class="form-inline">
+                    <div class="input-group pull-right" >
+                        <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="{{ 'camTravel2App.voyage.home.search' | translate }}">
+                        <span  class="input-group-btn width-min" >
+                            <button class="btn btn-info" ng-click="vm.search(vm.searchQuery)">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                        <span class="input-group-btn width-min" ng-if="vm.currentSearch">
+                            <button class="btn btn-info" ng-click="vm.clear()">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span data-translate="global.field.id">ID</span></th>
+                    <th><span data-translate="camTravel2App.voyage.numero">Numero</span></th>
+                    <th><span data-translate="camTravel2App.voyage.datedepart">Datedepart</span></th>
+                    <th><span data-translate="camTravel2App.voyage.datearrive">Datearrive</span></th>
+                    <th><span data-translate="camTravel2App.voyage.voyage">Voyage</span></th>
+                    <th><span data-translate="camTravel2App.voyage.car">Car</span></th>
+                    <th><span data-translate="camTravel2App.voyage.train">Train</span></th>
+                    <th><span data-translate="camTravel2App.voyage.type">Type</span></th>
+                    <th><span data-translate="camTravel2App.voyage.state">State</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="voyage in vm.voyages track by voyage.id">
+                    <td><a ui-sref="voyage-detail({id:voyage.id})">{{voyage.id}}</a></td>
+                    <td>{{voyage.numero}}</td>
+                    <td>{{voyage.datedepart | date:'medium'}}</td>
+                    <td>{{voyage.datearrive | date:'medium'}}</td>
+                    <td>
+                        <a ui-sref="routes-detail({id:voyage.voyage.id})">{{voyage.voyage.numero}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="car-detail({id:voyage.car.id})">{{voyage.car.immatriculation}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="train-detail({id:voyage.train.id})">{{voyage.train.immatriculation}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="type-voyage-detail({id:voyage.type.id})">{{voyage.type.code}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="state-voyage-detail({id:voyage.state.id})">{{voyage.state.code}}</a>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="voyage-detail({id:voyage.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="voyage.edit({id:voyage.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="voyage.delete({id:voyage.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
